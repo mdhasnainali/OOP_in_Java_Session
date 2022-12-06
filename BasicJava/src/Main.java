@@ -24,5 +24,8 @@ public class Main {
         carOfNur.stop();
         carOfSifat.stop();
 
+        InOut inOut = new InOut();
+        System.out.println(inOut.readFromSystem());
+
     }
 }
