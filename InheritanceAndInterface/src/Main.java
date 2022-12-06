@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+
+        // Inheritance
         EnglishQuestion englishQuestion = new EnglishQuestion("What is verb?");
 
         englishQuestion.setAns("Verb is action of a sentence.");
@@ -22,5 +24,17 @@ public class Main {
 
         System.out.println("The solution of your exam:");
         englishQuestion.printQuestionDetails();
+
+        System.out.println("\n");
+
+        // Interface
+        MobilePhone mobilePhone = new MobilePhone(50);
+
+        mobilePhone.turnOn();
+        String wifiName = mobilePhone.searchNearestWifi();
+        System.out.println("Charge :" + mobilePhone.getCharge());
+        mobilePhone.connectToAWifi(wifiName);
+        mobilePhone.turnOff();
+
     }
 }
